@@ -1,4 +1,4 @@
-package com.zaphod.TorqueHelper;
+package com.zaphod.PandoraHelper;
 
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
@@ -10,12 +10,11 @@ import android.view.MenuItem;
 
 import java.lang.Override;
 
-public class TorqueHelper extends Activity {
+public class PandoraHelper extends Activity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
     }
 
     @Override
@@ -23,8 +22,8 @@ public class TorqueHelper extends Activity {
 
         super.onResume();
         PackageManager pm = getPackageManager();
-        Intent launch = pm.getLaunchIntentForPackage("org.prowl.torque");
         try {
+            Intent launch = pm.getLaunchIntentForPackage("com.pandora.android");
             startActivity (launch);
         } catch(ActivityNotFoundException anf) {
             finish();

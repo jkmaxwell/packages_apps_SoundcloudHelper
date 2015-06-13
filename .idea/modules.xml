@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/TorqueHelper.iml" filepath="$PROJECT_DIR$/TorqueHelper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/PandoraHelper.iml" filepath="$PROJECT_DIR$/.idea/PandoraHelper.iml" />
     </modules>
   </component>
 </project>
