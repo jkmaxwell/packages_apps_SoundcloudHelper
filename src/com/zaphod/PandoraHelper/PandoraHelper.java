@@ -22,14 +22,18 @@ public class PandoraHelper extends Activity {
 
         super.onResume();
         PackageManager pm = getPackageManager();
-        try {
-            Intent launch = pm.getLaunchIntentForPackage("com.pandora.android");
-            startActivity (launch);
-        } catch(ActivityNotFoundException anf) {
+        Intent launch = pm.getLaunchIntentForPackage("com.pandora.android");
+        if (launch != null) {
+            try {
+                startActivity(launch);
+            } catch (ActivityNotFoundException anf) {
+                finish();
+            }
+        } else {
             finish();
         }
-
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         return true;
