@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.zaphod.PandoraHelper"
+    package="com.code404.MixcloudHelper"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -11,7 +11,7 @@
         android:icon="@drawable/ic_launcher"
         android:theme="@android:style/Theme.Translucent">
         <activity
-            android:name="com.zaphod.PandoraHelper.PandoraHelper"
+            android:name="com.code404.MixcloudHelper.MixcloudHelper"
             android:label="@string/title_activity"
             android:launchMode="singleTop"
             android:excludeFromRecents="true">

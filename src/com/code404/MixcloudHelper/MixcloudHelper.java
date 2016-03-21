@@ -1,4 +1,4 @@
-package com.zaphod.PandoraHelper;
+package com.code404.MixcloudHelper;
 
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
@@ -10,7 +10,7 @@ import android.view.MenuItem;
 
 import java.lang.Override;
 
-public class PandoraHelper extends Activity {
+public class MixcloudHelper extends Activity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -22,7 +22,7 @@ public class PandoraHelper extends Activity {
 
         super.onResume();
         PackageManager pm = getPackageManager();
-        Intent launch = pm.getLaunchIntentForPackage("com.pandora.android");
+        Intent launch = pm.getLaunchIntentForPackage("com.mixcloud.player");
         if (launch != null) {
             try {
                 startActivity(launch);
@@ -39,5 +39,5 @@ public class PandoraHelper extends Activity {
         return true;
     }
 
-    
+
 }
