@@ -11,7 +11,7 @@
         android:icon="@drawable/ic_launcher"
         android:theme="@android:style/Theme.Translucent">
         <activity
-            android:name="com.code404.SoundcloudHelper"
+            android:name="com.code404.SoundcloudHelper.SoundcloudHelper"
             android:label="@string/title_activity"
             android:launchMode="singleTop"
             android:excludeFromRecents="true">
