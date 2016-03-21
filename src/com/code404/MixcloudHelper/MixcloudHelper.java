@@ -1,4 +1,4 @@
-package com.code404.MixcloudHelper;
+package com.code404.SoundcloudHelper;
 
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
@@ -10,7 +10,7 @@ import android.view.MenuItem;
 
 import java.lang.Override;
 
-public class MixcloudHelper extends Activity {
+public class SoundcloudHelper extends Activity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -22,7 +22,7 @@ public class MixcloudHelper extends Activity {
 
         super.onResume();
         PackageManager pm = getPackageManager();
-        Intent launch = pm.getLaunchIntentForPackage("com.mixcloud.player");
+        Intent launch = pm.getLaunchIntentForPackage("com.soundcloud.android");
         if (launch != null) {
             try {
                 startActivity(launch);

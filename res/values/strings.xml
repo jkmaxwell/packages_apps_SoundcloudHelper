@@ -16,6 +16,6 @@
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_name">Mixcloud</string>
-    <string name="title_activity">Mixcloud</string>
+    <string name="app_name">Soundcloud</string>
+    <string name="title_activity">Soundcloud</string>
 </resources>
